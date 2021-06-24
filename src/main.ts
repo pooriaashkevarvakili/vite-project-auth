@@ -9,5 +9,7 @@ import router from "./router";
 const app=createApp(App).use(store)
 app.use(store)
 app.use(router)
+app.config.productionTip = false;
+
 app.use(Antd)
 .mount('#app')
